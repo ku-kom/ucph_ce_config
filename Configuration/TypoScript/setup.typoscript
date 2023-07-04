@@ -1,0 +1,38 @@
+# CONTENT ELEMENT SETTINGS
+# Shared settings for TYPO3 content elements
+lib.contentElement = FLUIDTEMPLATE
+lib.contentElement {
+    templateName = Default
+    templateRootPaths {
+        0 = EXT:ucph_ce_config/Resources/Private/Templates/
+    }
+    partialRootPaths {
+        0 = EXT:ucph_ce_config/Resources/Private/Partials/
+    }
+    layoutRootPaths {
+        0 = EXT:ucph_ce_config/Resources/Private/Layouts/
+    }
+
+    variables {
+        backendlayout = TEXT
+        backendlayout {
+            data = pagelayout
+            replacement.10 {
+                search = pagets__
+                replace =
+            }
+            ifEmpty = default
+        }
+
+        containerClassNames = COA
+        containerClassNames {
+            10 = TEXT
+            10 {
+                data = {field:tx_full_site_width}
+                if.equals = 1
+                noTrimWrap = |-fluid||
+            }
+        }
+    }
+
+}
