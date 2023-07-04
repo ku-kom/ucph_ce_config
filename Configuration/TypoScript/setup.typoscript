@@ -27,11 +27,11 @@ lib.contentElement {
         containerClassNames = COA
         containerClassNames {
             10 = TEXT
-            10 {
-                data = {field:tx_full_site_width}
+            10  {
+                if.value.field = tx_full_site_width
                 if.equals = 1
-                noTrimWrap = |-fluid||
-            }
+                value = -fluid
+			}
         }
     }
 
