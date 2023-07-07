@@ -1,7 +1,7 @@
 <html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
 <f:variable name="spaceBefore">{f:if(condition: '{data.space_before_class}', then: '{data.space_before_class}', else: 'none')}</f:variable>
 <f:variable name="spaceAfter">{f:if(condition: '{data.space_after_class}', then: '{data.space_after_class}', else: 'none')}</f:variable>
-<f:variable name="frameIndent">{f:if(condition: '{data.frame_class}', then: '{data.frame_class}')}</f:variable>
+<f:variable name="frameIndent">{data.frame_class}</f:variable>
 <f:variable name="frameBg">{f:if(condition: '{data.tx_ucph_ce_background_color}', then: ' frame-background-{data.tx_ucph_ce_background_color}', else: '')}</f:variable>
 
 <div id="c{data.uid}" class="frame frame-space-before-{spaceBefore} frame-space-after-{spaceAfter} frame-{frameIndent} {data.tx_ucph_ce_background_color}">
