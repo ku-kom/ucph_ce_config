@@ -3,8 +3,8 @@
 <f:variable name="spaceAfter">{f:if(condition: '{data.space_after_class}', then: '{data.space_after_class}', else: 'none')}</f:variable>
 
 
-<div id="c{data.uid}" class="frame row-space-before-{spaceBefore} row-space-after-{spaceAfter} {data.tx_ucph_ce_background_color}">
-    <div class="frame-container frame-background">
+<div id="c{data.uid}" class="frame frame-space-before-{spaceBefore} frame-space-after-{spaceAfter} {data.tx_ucph_ce_background_color}">
+    <div class="frame-container frame-background-{data.tx_ucph_ce_background_color}">
         <section class="container{containerClassNames}">
             <div class="row">
                 <div class="col">
