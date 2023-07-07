@@ -13,7 +13,7 @@
             <source>General TYPO3 content element configuration.</source>
         </trans-unit>
         <trans-unit id="ucph_ce_config_full_site_width">
-            <source>Full site width</source>
+            <source>Display content in full site width</source>
         </trans-unit>
         </body>
     </file>
