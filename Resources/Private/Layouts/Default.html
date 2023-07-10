@@ -2,14 +2,13 @@
 <f:variable name="spaceBefore">{f:if(condition: '{data.space_before_class}', then: '{data.space_before_class}', else: 'none')}</f:variable>
 <f:variable name="spaceAfter">{f:if(condition: '{data.space_after_class}', then: '{data.space_after_class}', else: 'none')}</f:variable>
 <f:variable name="frameIndent">{data.frame_class}</f:variable>
-<f:variable name="frameBg">{f:if(condition: '{data.tx_ucph_ce_background_color}', then: ' frame-background-{data.tx_ucph_ce_background_color}', else: '')}</f:variable>
+<f:variable name="frameBg">{f:if(condition: '{data.tx_ucph_ce_background_color}', then: '{data.tx_ucph_ce_background_color}', else: 'none')}</f:variable>
 <section>
-    <div id="c{data.uid}" class="frame frame-space-before-{spaceBefore} frame-space-after-{spaceAfter} frame-{frameIndent} {data.tx_ucph_ce_background_color}">
-        <div class="container{containerClassNames} frame-container{frameBg}">
-                <div class="col">
-                    <f:render section="Main" optional="true" />
-                </div>
-
+    <div id="c{data.uid}" class="frame frame-space-before-{spaceBefore} frame-space-after-{spaceAfter} frame-{frameIndent} frame-background-{frameBg} {data.tx_ucph_ce_background_color}">
+        <div class="frame-group-container">
+            <div class="frame-container frame-container-default">
+                <f:render section="Main" optional="true" />
+            </div>
         </div>
     </div>
 </section>
