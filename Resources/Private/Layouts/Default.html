@@ -3,17 +3,15 @@
 <f:variable name="spaceAfter">{f:if(condition: '{data.space_after_class}', then: '{data.space_after_class}', else: 'none')}</f:variable>
 <f:variable name="frameIndent">{data.frame_class}</f:variable>
 <f:variable name="frameBg">{f:if(condition: '{data.tx_ucph_ce_background_color}', then: ' frame-background-{data.tx_ucph_ce_background_color}', else: '')}</f:variable>
-
-<div id="c{data.uid}" class="frame frame-space-before-{spaceBefore} frame-space-after-{spaceAfter} frame-{frameIndent} {data.tx_ucph_ce_background_color}">
-    <div class="frame-container{frameBg}">
-        <section class="container{containerClassNames}">
-            <div class="row content-row">
+<section>
+    <div id="c{data.uid}" class="frame frame-space-before-{spaceBefore} frame-space-after-{spaceAfter} frame-{frameIndent} {data.tx_ucph_ce_background_color}">
+        <div class="container{containerClassNames} frame-container{frameBg}">
                 <div class="col">
                     <f:render section="Main" optional="true" />
                 </div>
-            </div>
-        </section>
+
+        </div>
     </div>
-</div>
+</section>
 
 </html>
