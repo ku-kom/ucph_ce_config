@@ -33,6 +33,16 @@ lib.contentElement {
                 value = -fluid
 			}
         }
+
+        # cType color - if none, set variable
+        colorName = COA
+        colorName {
+            10 = TEXT
+            10  {
+                value.field = tx_ucph_ce_background_color
+                ifEmpty = crow-bg-none
+			}
+        }
     }
 
 }
