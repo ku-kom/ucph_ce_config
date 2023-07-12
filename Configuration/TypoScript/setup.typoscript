@@ -1,3 +1,4 @@
+@import 'EXT:ucph_ce_config/Configuration/TypoScript/ContentElements/List.typoscript'
 # CONTENT ELEMENT SETTINGS
 # Shared settings for TYPO3 content elements
 lib.contentElement = FLUIDTEMPLATE
