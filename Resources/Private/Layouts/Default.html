@@ -8,7 +8,9 @@
     <div id="c{data.uid}" class="crow crow-space-before-{spaceBefore} crow-space-after-{spaceAfter} crow-{crowIndent} {data.tx_ucph_ce_background_color}{crowBg}">
         <div class="crow-group-container">
             <div class="crow-container crow-container-default">
-                <f:render section="Main" optional="true" />
+                <div id="c{data.uid}" class="{data.CType}">
+                    <f:render section="Main" optional="true" />
+                </div>
             </div>
         </div>
     </div>
