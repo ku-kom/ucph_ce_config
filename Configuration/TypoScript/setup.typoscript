@@ -25,16 +25,6 @@ lib.contentElement {
             ifEmpty = default
         }
 
-        containerClassNames = COA
-        containerClassNames {
-            10 = TEXT
-            10  {
-                if.value.field = tx_full_site_width
-                if.equals = 1
-                value = -fluid
-			}
-        }
-
         # cType color - if none, set variable
         colorName = COA
         colorName {
