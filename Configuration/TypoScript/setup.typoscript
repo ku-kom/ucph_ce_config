@@ -9,6 +9,7 @@ lib.contentElement {
     }
     partialRootPaths {
         0 = EXT:ucph_ce_config/Resources/Private/Partials/
+        7 = EXT:ucph_ce_header/Resources/Private/Partials/
     }
     layoutRootPaths {
         0 = EXT:ucph_ce_config/Resources/Private/Layouts/
