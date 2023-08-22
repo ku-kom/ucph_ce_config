@@ -35,5 +35,7 @@ lib.contentElement {
 			}
         }
     }
-
 }
+
+# Wrap all content in sections
+tt_content.stdWrap.wrap = <section>|</section>

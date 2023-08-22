@@ -3,17 +3,16 @@
 <f:variable name="spaceAfter">{f:if(condition: '{data.space_after_class}', then: '{data.space_after_class}', else: 'none')}</f:variable>
 <f:variable name="crowIndent">{data.frame_class}</f:variable>
 
-<section>
-    <div class="crow crow-space-before-{spaceBefore} crow-space-after-{spaceAfter} crow-{crowIndent} crow-bg-none">
-        <div class="crow-group-container">
-            <div class="crow-container crow-container-default">
-                <div id="c{data.uid}" class="{data.CType}">
-                    <f:render partial="All" arguments="{_all}" />
-                    <f:render section="Main" optional="true" />
-                </div>
+
+<div class="crow crow-space-before-{spaceBefore} crow-space-after-{spaceAfter} crow-{crowIndent} crow-bg-none">
+    <div class="crow-group-container">
+        <div class="crow-container crow-container-default">
+            <div id="c{data.uid}" class="{data.CType}">
+                <f:render partial="All" arguments="{_all}" />
+                <f:render section="Main" optional="true" />
             </div>
         </div>
     </div>
-</section>
+</div>
 
 </html>
