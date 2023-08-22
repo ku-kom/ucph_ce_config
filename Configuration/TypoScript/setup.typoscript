@@ -1,18 +1,17 @@
-@import 'EXT:ucph_ce_config/Configuration/TypoScript/ContentElements/List.typoscript'
 # CONTENT ELEMENT SETTINGS
 # Shared settings for TYPO3 content elements
 lib.contentElement = FLUIDTEMPLATE
 lib.contentElement {
     templateName = Default
     templateRootPaths {
-        0 = EXT:ucph_ce_config/Resources/Private/Templates/
+        0 = EXT:ucph_ce_base/Resources/Private/Templates/
     }
     partialRootPaths {
-        0 = EXT:ucph_ce_config/Resources/Private/Partials/
+        0 = EXT:ucph_ce_base/Resources/Private/Partials/
         7 = EXT:ucph_ce_header/Resources/Private/Partials/
     }
     layoutRootPaths {
-        0 = EXT:ucph_ce_config/Resources/Private/Layouts/
+        0 = EXT:ucph_ce_base/Resources/Private/Layouts/
     }
 
     variables {
