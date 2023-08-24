@@ -8,7 +8,7 @@ lib.contentElement {
     }
     partialRootPaths {
         0 = EXT:ucph_ce_base/Resources/Private/Partials/
-        7 = EXT:ucph_ce_header/Resources/Private/Partials/
+        7 = EXT:ucph_content_header/Resources/Private/Partials/
     }
     layoutRootPaths {
         0 = EXT:ucph_ce_base/Resources/Private/Layouts/
@@ -30,7 +30,7 @@ lib.contentElement {
         colorName {
             10 = TEXT
             10  {
-                value.field = tx_ucph_ce_background_color
+                value.field = tx_ucph_content_bg_color
                 ifEmpty = crow-bg-none
 			}
         }
