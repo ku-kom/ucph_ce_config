@@ -25,7 +25,7 @@ lib.contentElement {
             ifEmpty = default
         }
 
-        # cType color - if none, set variable
+        # Grid background color
         colorName = COA
         colorName {
             10 = TEXT
